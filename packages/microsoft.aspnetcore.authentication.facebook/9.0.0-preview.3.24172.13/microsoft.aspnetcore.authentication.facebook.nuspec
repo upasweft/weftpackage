@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.AspNetCore.Authentication.Facebook</id>
+    <version>9.0.0-preview.3.24172.13</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <projectUrl>https://asp.net/</projectUrl>
+    <description>ASP.NET Core middleware that enables an application to support Facebook's OAuth 2.0 authentication workflow.
+
+This package was built from the source code at https://github.com/dotnet/aspnetcore/tree/d4eca39c3fc1944b2c6431bf6b22036bdb176c0d</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>aspnetcore authentication security</tags>
+    <serviceable>true</serviceable>
+    <repository type="git" url="https://github.com/dotnet/aspnetcore" commit="d4eca39c3fc1944b2c6431bf6b22036bdb176c0d" />
+    <dependencies>
+      <group targetFramework="net9.0" />
+    </dependencies>
+  <frameworkReferences><group targetFramework="net9.0"><frameworkReference name="Microsoft.AspNetCore.App" /></group></frameworkReferences></metadata>
+</package>

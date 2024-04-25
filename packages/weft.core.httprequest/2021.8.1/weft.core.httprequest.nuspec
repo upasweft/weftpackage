@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Weft.Core.HttpRequest</id>
+    <version>2021.8.1</version>
+    <authors>Weft.Core.HttpRequest</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WEFT Core Http Request</description>
+    <releaseNotes>Added new Post and Get Methods for supporting external headers</releaseNotes>
+    <repository url="https://github.com/weft-repo/weft-shared-master" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.AspNetCore.Http" version="2.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Http" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Syncfusion.XlsIO.Net.Core</id>
+    <version>18.3.0.40</version>
+    <title>Create, Read and Edit Excel file in .NET Core using Syncfusion XlsIO library</title>
+    <authors>Syncfusion Inc.</authors>
+    <owners>Syncfusion Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.syncfusion.com/nuget/license?utm_source=nuget&amp;utm_medium=listing</licenseUrl>
+    <projectUrl>https://www.syncfusion.com/?utm_source=nuget&amp;utm_medium=listing</projectUrl>
+    <iconUrl>https://www.syncfusion.com/content/images/nuget/sync_logo_icon.png</iconUrl>
+    <description>Syncfusion Essential XlsIO is a .NET Standard Excel library that allows to create, read, and edit Excel files in .NET core application without Microsoft Office dependencies.
+
+Key features:
+• Easily import and export data from/to common business objects.
+• Performs quick evaluation with 400+ functions.
+• Imports data into a customized format using Template Markers.
+• Create and edit all chart types including Excel 2016 charts.
+• Cell data validations can be applied with operators, alert messages, custom formulas, and drop-down lists.
+• Highlights important cells by conditional formats.
+• Performs various cell-level operations like resizing, hide or unhide, insert or delete, group and ungroup, and so on.
+• Supports various formatting like number formats, text alignments, font settings, border settings, color settings, rich-text, and so on.
+• Supports applying built-in styles and custom styles to cells.
+• Sorts data based on cell value, cell color, and font color.
+• Filters data based on cell value, cell color, icons, and so on.
+• Create and edit the auto shapes, comments, text boxes, combo boxes, check boxes, and option buttons.
+• Enables page settings like orientation, paper size, scaling, margins, print titles, header and footer, and so on.
+
+Learn more: https://www.syncfusion.com/excel-framework/net-core
+
+Documentation: https://help.syncfusion.com/file-formats/xlsio/overview
+
+Support:
+Incident: https://www.syncfusion.com/support/directtrac/incidents/newincident
+Forum: https://www.syncfusion.com/forums/aspnetcore
+
+This is a commercial product and requires a paid license for possession or use. Syncfusion's licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
+
+© Copyright 2020 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.</description>
+    <releaseNotes>https://help.syncfusion.com/aspnet-core/release-notes/v18.3.0.40?utm_source=nuget&amp;utm_medium=listing</releaseNotes>
+    <copyright>Copyright 2001 - 2020 Syncfusion Inc.</copyright>
+    <tags>syncfusion syncfusion.aspnetcore aspnetcore ej1 net-core net-standard .net core xlsio excel xls xlsx csv chart formula pivot spreadsheet worksheet</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="NETStandard.Library" version="2.0.0" />
+        <dependency id="Syncfusion.Compression.Net.Core" version="18.3.0.40" />
+        <dependency id="Syncfusion.Licensing" version="18.3.0.40" />
+      </group>
+      <group targetFramework=".NETStandard1.2">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+        <dependency id="Syncfusion.Compression.Net.Core" version="18.3.0.40" />
+        <dependency id="Syncfusion.Licensing" version="18.3.0.40" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+        <dependency id="Syncfusion.Compression.Net.Core" version="18.3.0.40" />
+        <dependency id="Syncfusion.Licensing" version="18.3.0.40" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

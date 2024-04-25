@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenTracing.Contrib.NetCore</name>
+    </assembly>
+    <members>
+        <member name="T:OpenTracing.Contrib.NetCore.AspNetCore.AspNetCoreDiagnostics">
+            <summary>
+            Instruments ASP.NET Core.
+            <para/>
+            Unfortunately, ASP.NET Core only uses one <see cref="T:System.Diagnostics.DiagnosticListener"/> instance
+            for everything so we also only create one observer to ensure best performance.
+            <para/>Hosting events: https://github.com/aspnet/Hosting/blob/dev/src/Microsoft.AspNetCore.Hosting/Internal/HostingApplicationDiagnostics.cs
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.AspNetCore.HostingOptions.ComponentName">
+            <summary>
+            Allows changing the "component" tag of created spans.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.AspNetCore.HostingOptions.IgnorePatterns">
+            <summary>
+            A list of delegates that define whether or not a given request should be ignored.
+            <para/>
+            If any delegate in the list returns <c>true</c>, the request will be ignored.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.AspNetCore.HostingOptions.ExtractEnabled">
+            <summary>
+            A delegates that defines from which requests tracing headers are extracted.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.AspNetCore.HostingOptions.OperationNameResolver">
+            <summary>
+            A delegate that returns the OpenTracing "operation name" for the given request.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.AspNetCore.HostingOptions.OnRequest">
+            <summary>
+            Allows the modification of the created span to e.g. add further tags.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.AspNetCore.HostingOptions.OnError">
+            <summary>
+            Allows the modification of the created span when error occured to e.g. add further tags.
+            </summary>
+        </member>
+        <member name="T:OpenTracing.Contrib.NetCore.CoreFx.GenericDiagnostics">
+            <summary>
+            A <see cref="T:System.Diagnostics.DiagnosticListener"/> subscriber that logs ALL events to <see cref="P:OpenTracing.ITracer.ActiveSpan"/>.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnosticOptions.ComponentName">
+            <summary>
+            Allows changing the "component" tag of created spans.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnosticOptions.IgnorePatterns">
+            <summary>
+            A list of delegates that define whether or not a given request should be ignored.
+            <para/>
+            If any delegate in the list returns <c>true</c>, the request will be ignored.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnosticOptions.InjectEnabled">
+            <summary>
+            A delegates that defines on what requests tracing headers are propagated.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnosticOptions.OperationNameResolver">
+            <summary>
+            A delegate that returns the OpenTracing "operation name" for the given request.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnosticOptions.OnRequest">
+            <summary>
+            Allows the modification of the created span to e.g. add further tags.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnosticOptions.OnError">
+            <summary>
+            Allows the modification of the created span when error occured to e.g. add further tags.
+            </summary>
+        </member>
+        <member name="T:OpenTracing.Contrib.NetCore.CoreFx.HttpHandlerDiagnostics">
+            <summary>
+            Instruments outgoing HTTP calls that use <see cref="T:System.Net.Http.HttpClientHandler"/>.
+            <para/>See https://github.com/dotnet/corefx/blob/master/src/System.Net.Http/src/System/Net/Http/DiagnosticsHandler.cs
+            <para/>and https://github.com/dotnet/corefx/blob/master/src/System.Net.Http/src/System/Net/Http/DiagnosticsHandlerLoggingStrings.cs
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.SqlClientDiagnosticOptions.ComponentName">
+            <summary>
+            Allows changing the "component" tag of created spans.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.CoreFx.SqlClientDiagnosticOptions.OperationNameResolver">
+            <summary>
+            A delegate that returns the OpenTracing "operation name" for the given command.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.EntityFrameworkCore.EntityFrameworkCoreDiagnosticOptions.ComponentName">
+            <summary>
+            Allows changing the "component" tag of created spans.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.EntityFrameworkCore.EntityFrameworkCoreDiagnosticOptions.OperationNameResolver">
+            <summary>
+            A delegate that returns the OpenTracing "operation name" for the given command.
+            </summary>
+        </member>
+        <member name="T:OpenTracing.Contrib.NetCore.InstrumentationService">
+            <summary>
+            Starts and stops all OpenTracing instrumentation components.
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.DiagnosticListenerObserver.GetListenerName">
+            <summary>
+            The name of the <see cref="T:System.Diagnostics.DiagnosticListener"/> that should be instrumented.
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.Internal.GenericEventOptions.IgnoreAll">
+            <summary>
+            is ignore all events log
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.Internal.GenericEventOptions.IgnoredListenerNames">
+            <summary>
+            listener names which will be ignored for logging
+            </summary>
+        </member>
+        <member name="P:OpenTracing.Contrib.NetCore.Internal.GenericEventOptions.IgnoredEvents">
+            <summary>
+            events which will be ignored for logging. Key is listener name, HashSet item is event name of the listener
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.GenericEventOptions.IsIgnored(System.String)">
+            <summary>
+            usually used in DiagnosticObserver
+            </summary>
+            <param name="listenerName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OpenTracing.Contrib.NetCore.Internal.IGlobalTracerAccessor">
+            <summary>
+            Helper interface which allows unit tests to mock the <see cref="T:OpenTracing.Util.GlobalTracer"/>.
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.PropertyFetcher.#ctor(System.String)">
+            <summary>
+            Make a new PropertyFetcher for a property named 'propertyName'.
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.PropertyFetcher.Fetch(System.Object)">
+            <summary>
+            Given an object fetch the property that this PropertySpec represents.
+            </summary>
+        </member>
+        <member name="T:OpenTracing.Contrib.NetCore.Internal.PropertyFetcher.PropertyFetch">
+            <summary>
+            PropertyFetch is a helper class. It takes a PropertyInfo and then knows how
+            to efficiently fetch that property from a .NET object (See Fetch method).
+            It hides some slightly complex generic code.  
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.PropertyFetcher.PropertyFetch.FetcherForProperty(System.Reflection.PropertyInfo)">
+            <summary>
+            Create a property fetcher from a .NET Reflection PropertyInfo class that
+            represents a property of a particular type.
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.PropertyFetcher.PropertyFetch.Fetch(System.Object)">
+            <summary>
+            Given an object, fetch the property that this propertyFech represents.
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Internal.SpanExtensions.SetException(OpenTracing.ISpan,System.Exception)">
+            <summary>
+            Sets the <see cref="F:OpenTracing.Tag.Tags.Error"/> tag and adds information about the <paramref name="exception"/>
+            to the given <paramref name="span"/>.
+            </summary>
+        </member>
+        <member name="T:OpenTracing.Contrib.NetCore.Logging.OpenTracingLoggerProvider">
+            <summary>
+            The provider for the <see cref="T:OpenTracing.Contrib.NetCore.Logging.OpenTracingLogger"/>.
+            </summary>
+        </member>
+        <member name="M:OpenTracing.Contrib.NetCore.Logging.OpenTracingLoggerProvider.CreateLogger(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder">
+            <summary>
+            An interface for configuring OpenTracing services.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder.Services">
+            <summary>
+            Gets the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> where OpenTracing services are configured.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OpenTracingBuilderExtensions.AddAspNetCore(Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder)">
+            <summary>
+            Adds instrumentation for ASP.NET Core.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OpenTracingBuilderExtensions.AddCoreFx(Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder)">
+            <summary>
+            Adds instrumentation for the .NET framework BCL.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OpenTracingBuilderExtensions.AddEntityFrameworkCore(Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder)">
+            <summary>
+            Adds instrumentation for Entity Framework Core.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OpenTracingBuilderExtensions.ConfigureEntityFrameworkCore(Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder,System.Action{OpenTracing.Contrib.NetCore.EntityFrameworkCore.EntityFrameworkCoreDiagnosticOptions})">
+            <summary>
+            Configuration options for the instrumentation of Entity Framework Core.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddOpenTracing(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder})">
+            <summary>
+            Adds OpenTracing instrumentation for ASP.NET Core, CoreFx (BCL), Entity Framework Core.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddOpenTracingCoreServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IOpenTracingBuilder})">
+            <summary>
+            Adds the core services required for OpenTracing without any actual instrumentations.
+            </summary>
+        </member>
+    </members>
+</doc>

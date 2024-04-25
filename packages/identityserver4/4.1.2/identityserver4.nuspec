@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>IdentityServer4</id>
+    <version>4.1.2</version>
+    <authors>Brock Allen,Dominick Baier</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>icon.jpg</icon>
+    <projectUrl>https://github.com/IdentityServer/IdentityServer4</projectUrl>
+    <description>OpenID Connect and OAuth 2.0 Framework for ASP.NET Core</description>
+    <releaseNotes>https://github.com/IdentityServer/IdentityServer4/releases</releaseNotes>
+    <tags>OAuth2 OAuth 2.0 OpenID Connect Security Identity IdentityServer</tags>
+    <repository type="git" url="https://github.com/IdentityServer/IdentityServer4" commit="997a6cdd643e46cd5762b710c4ddc43574cbec2e" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="IdentityModel" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="IdentityServer4.Storage" version="4.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.OpenIdConnect" version="3.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.IdentityModel.Protocols.OpenIdConnect" version="5.6.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+</package>

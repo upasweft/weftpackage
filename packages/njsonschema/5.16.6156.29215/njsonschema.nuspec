@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>NJsonSchema</id>
+    <version>5.16.6156.29215</version>
+    <authors>Rico Suter</authors>
+    <owners>Rico Suter</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/rsuter/NJsonSchema/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/rsuter/NJsonSchema</projectUrl>
+    <description>JSON Schema draft v4 reader, generator and validator for .NET</description>
+    <tags>json schema validation generator .net</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+</package>

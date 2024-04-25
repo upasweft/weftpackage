@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Jaeger.Core</id>
+    <version>1.0.3</version>
+    <authors>Chatham Financial Corp. and The Jaeger Authors</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>jaeger-icon.png</icon>
+    <projectUrl>https://github.com/jaegertracing/jaeger-client-csharp</projectUrl>
+    <description>Jaeger .NET Tracing</description>
+    <releaseNotes>https://github.com/jaegertracing/jaeger-client-csharp/releases/tag/v1.0.3</releaseNotes>
+    <copyright>Copyright 2018 (c) The Jaeger Authors. Copyright 2018 (c) Chatham Financial Corp.</copyright>
+    <tags>jaeger tracing opentracing</tags>
+    <repository type="git" url="git://github.com/jaegertracing/jaeger-client-csharp" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Extensions.Configuration.EnvironmentVariables" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="3.1.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.1" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing" version="0.12.1" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Tasks.Dataflow" version="4.11.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

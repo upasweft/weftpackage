@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Weft.Core.Extensions</id>
+    <version>2021.7.1</version>
+    <authors>Weft.Core.Extensions</authors>
+    <description>WEFT Core Extensions</description>
+    <repository url="https://github.com/weft-repo/weft-shared-master" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Jaeger" version="0.3.7" exclude="Build,Analyzers" />
+        <dependency id="NSwag.AspNetCore" version="13.7.0" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing.Contrib.NetCore" version="0.6.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

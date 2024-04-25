@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NSwag.AspNetCore</id>
+    <version>7.0.0</version>
+    <authors>Rico Suter</authors>
+    <owners>Rico Suter</owners>
+    <licenseUrl>https://github.com/NSwag/NSwag/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/NSwag/NSwag</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/NSwag/NSwag/master/assets/NuGetIcon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NSwag: The Swagger API toolchain for .NET and TypeScript</description>
+    <tags>Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="[1.0.0, )" />
+        <dependency id="Microsoft.AspNetCore.StaticFiles" version="[1.0.0, )" />
+        <dependency id="Microsoft.Extensions.FileProviders.Embedded" version="[1.0.0, )" />
+        <dependency id="NSwag.Annotations" version="[7.0.6156.29526, )" />
+        <dependency id="NSwag.CodeGeneration" version="[7.0.6156.29526, )" />
+      </group>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="System.IO.FileSystem" version="[4.0.1, )" />
+        <dependency id="System.Xml.XPath.XDocument" version="[4.0.1, )" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="[1.0.0, )" />
+        <dependency id="Microsoft.AspNetCore.StaticFiles" version="[1.0.0, )" />
+        <dependency id="Microsoft.Extensions.FileProviders.Embedded" version="[1.0.0, )" />
+        <dependency id="NSwag.Annotations" version="[7.0.6156.29526, )" />
+        <dependency id="NSwag.CodeGeneration" version="[7.0.6156.29526, )" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

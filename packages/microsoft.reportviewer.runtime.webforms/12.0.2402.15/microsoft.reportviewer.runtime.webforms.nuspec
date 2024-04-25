@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Microsoft.ReportViewer.Runtime.WebForms</id>
+        <version>12.0.2402.15</version>
+        <authors>thiago.fialho</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Microsoft ReportViewer Runtime 2015 for Web Forms</description>
+        <copyright>Microsoft</copyright>
+        <tags>Microsoft Reporting ReportViewer Runtime WebForms</tags>
+        <dependencies>
+            <dependency id="Microsoft.ReportViewer.Runtime.Common" version="[12.0.2402.15]" />
+        </dependencies>
+    </metadata>
+</package>

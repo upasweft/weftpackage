@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Respawn</id>
+    <version>3.3.0</version>
+    <authors>Jimmy Bogard</authors>
+    <owners>Jimmy Bogard</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/jbogard/Respawn/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jbogard/Respawn</projectUrl>
+    <iconUrl>https://github.com/jbogard/Respawn/raw/master/logo.png</iconUrl>
+    <description>Intelligent checkpoints for database tests</description>
+    <copyright>Copyright Jimmy Bogard</copyright>
+    <tags>tests integration tests database tests</tags>
+    <repository type="git" url="git://github.com/jbogard/respawn" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="System.ValueTuple" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.2">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Data.Common" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="System.Linq" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Extensions" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Data.SqlClient" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

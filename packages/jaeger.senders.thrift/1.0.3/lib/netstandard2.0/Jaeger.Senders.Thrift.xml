@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jaeger.Senders.Thrift</name>
+    </assembly>
+    <members>
+        <member name="M:Jaeger.Senders.Thrift.HttpSender.#ctor(System.String)">
+            <summary>
+            </summary>
+            <param name="endpoint">Jaeger REST endpoint consuming jaeger.thrift, e.g
+            http://localhost:14268/api/traces</param>
+        </member>
+        <member name="T:Jaeger.Senders.Thrift.ThriftSender">
+            <summary>
+            JaegerThriftTransport is the base class for transporting spans from C# into Jaeger.
+            It provides the basic implementation of serializing spans but leaves the buffering
+            and sending of the serialized spans to concrete implementations.
+            </summary>
+        </member>
+        <member name="T:Jaeger.Senders.Thrift.UdpSender">
+            <inheritdoc />
+            <summary>
+            JaegerUdpTransport provides an implementation to transport spans over UDP using
+            Compact Thrift. It handles making sure payloads efficiently use the UDP packet
+            size by filling up as much of a UDP message it can before sending.
+            </summary>
+        </member>
+        <member name="M:Jaeger.Senders.Thrift.UdpSender.#ctor">
+            <summary>
+            This constructor expects Jaeger running on <see cref="F:Jaeger.Senders.Thrift.UdpSender.DefaultAgentUdpHost"/>
+            and port <see cref="F:Jaeger.Senders.Thrift.UdpSender.DefaultAgentUdpCompactPort"/>.
+            </summary>
+        </member>
+        <member name="M:Jaeger.Senders.Thrift.UdpSender.#ctor(System.String,System.Int32,System.Int32)">
+            <param name="host">If empty it will use <see cref="F:Jaeger.Senders.Thrift.UdpSender.DefaultAgentUdpHost"/>.</param>
+            <param name="port">If 0 it will use <see cref="F:Jaeger.Senders.Thrift.UdpSender.DefaultAgentUdpCompactPort"/>.</param>
+            <param name="maxPacketSize">If 0 it will use <see cref="F:Jaeger.Thrift.Senders.Internal.ThriftUdpClientTransport.MaxPacketSize"/>. Must not exceed <see cref="F:Jaeger.Thrift.Senders.Internal.ThriftUdpClientTransport.MaxPacketSize"/>.</param>
+        </member>
+    </members>
+</doc>

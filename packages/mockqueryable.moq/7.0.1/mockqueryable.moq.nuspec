@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MockQueryable.Moq</id>
+    <version>7.0.1</version>
+    <authors>Roman Titov</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo.png</icon>
+    <projectUrl>https://github.com/romantitov/MockQueryable</projectUrl>
+    <description>Extension for mocking Entity Framework Core operations such ToListAsync, FirstOrDefaultAsync etc.
+			When writing tests for your application it is often desirable to avoid hitting the database. The extension allows you to achieve this by creating a context – with behavior defined by your tests – that makes use of in-memory data.</description>
+    <releaseNotes>#74 Fix ToListAsync() for mocked DbSet by using lazy-creation of AsyncEnumerator - Thanks @fischero19
+		  #75 Added method for build DbSet from IEnumerable. - Thanks @sq735</releaseNotes>
+    <tags>Mock EntityFrameworkCore Queryable mock EF EFCore UnitTests EntityFrameworkCore Moq</tags>
+    <repository type="git" url="https://github.com/romantitov/MockQueryable" commit="d48cbb15410614bb8e8f0d9cd51a68406ff3f9b4" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="MockQueryable.EntityFrameworkCore" version="7.0.1" exclude="Build,Analyzers" />
+        <dependency id="Moq" version="4.8.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

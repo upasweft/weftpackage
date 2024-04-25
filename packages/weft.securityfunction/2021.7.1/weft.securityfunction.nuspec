@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Weft.SecurityFunction</id>
+    <version>2021.7.1</version>
+    <authors>Weft.SecurityFunction</authors>
+    <description>WEFT Core Security Function</description>
+    <repository url="https://github.com/weft-repo/weft-shared-master" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="FluentValidation" version="8.6.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.NewtonsoftJson" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="3.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Identity.Core" version="3.1.7" exclude="Build,Analyzers" />
+        <dependency id="System.Reactive" version="4.4.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

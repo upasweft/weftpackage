@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AspNetCoreRuntime.7.0.x86</id>
+    <version>7.0.18</version>
+    <title>ASP.NET Core 7.0 (x86) Runtime</title>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <projectUrl>https://asp.net/</projectUrl>
+    <description>This site extension installs Microsoft.AspNetCore.App and Microsoft.NetCore.App shared runtimes.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>aspnetcore AzureSiteExtension</tags>
+    <serviceable>true</serviceable>
+    <packageTypes>
+      <packageType name="AzureSiteExtension" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/dotnet/aspnetcore" commit="f050ae044be8bddc002ab88736e4bf78dc822122" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2" />
+    </dependencies>
+  </metadata>
+</package>

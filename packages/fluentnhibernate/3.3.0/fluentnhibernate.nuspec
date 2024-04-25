@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FluentNHibernate</id>
+    <version>3.3.0</version>
+    <authors>James Gregory and contributors (Paul Batum, Hudson Akridge, Gleb Chermennov, Jorge Rodríguez Galán).</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo-nuget.png</icon>
+    <projectUrl>https://github.com/nhibernate/fluent-nhibernate</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/nhibernate/fluent-nhibernate/main/docs/logo-nuget.png</iconUrl>
+    <description>Fluent, XML-less, compile safe, automated, convention-based mappings for NHibernate.</description>
+    <copyright>Copyright (c) James Gregory and contributors (Paul Batum, Hudson Akridge, Gleb Chermennov, Jorge Rodríguez Galán).</copyright>
+    <tags>ORM DAL NHibernate Fluent Conventions DataBase ADO.Net Mappings</tags>
+    <repository type="git" url="https://github.com/nhibernate/fluent-nhibernate.git" commit="ef7694a08613a33813d9d9bca48a8816bfdd4d3d" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="NHibernate" version="5.3.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="NHibernate" version="5.3.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="NHibernate" version="5.3.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

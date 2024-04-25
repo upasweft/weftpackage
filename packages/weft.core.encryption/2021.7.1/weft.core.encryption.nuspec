@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Weft.Core.Encryption</id>
+    <version>2021.7.1</version>
+    <authors>Weft.Core.Encryption</authors>
+    <description>WEFT Core Encryption</description>
+    <repository url="https://github.com/weft-repo/weft-shared-master" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+</package>

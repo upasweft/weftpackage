@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NSwag.AspNetCore</name>
+    </assembly>
+    <members>
+        <member name="T:NSwag.AspNetCore.JsonExceptionFilterAttribute">
+            <summary>Handles thrown exceptions from action methods and serializes them with the correct HTTP status code.</summary>
+        </member>
+        <member name="M:NSwag.AspNetCore.JsonExceptionFilterAttribute.#ctor">
+            <summary> Initializes a new instance of the <see cref="T:NSwag.AspNetCore.JsonExceptionFilterAttribute"/> class.</summary>
+        </member>
+        <member name="M:NSwag.AspNetCore.JsonExceptionFilterAttribute.#ctor(System.Boolean)">
+            <summary> Initializes a new instance of the <see cref="T:NSwag.AspNetCore.JsonExceptionFilterAttribute"/> class.</summary>
+            <param name="hideStackTrace">If set to <c>true</c> the serializer hides stack trace (i.e. sets the StackTrace to 'HIDDEN').</param>
+        </member>
+        <member name="M:NSwag.AspNetCore.JsonExceptionFilterAttribute.#ctor(System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Reflection.Assembly})">
+            <summary> Initializes a new instance of the <see cref="T:NSwag.AspNetCore.JsonExceptionFilterAttribute"/> class.</summary>
+            <param name="hideStackTrace">If set to <c>true</c> the serializer hides stack trace (i.e. sets the StackTrace to 'HIDDEN').</param>
+            <param name="searchedNamespaces">The namespaces and assemblies to search for exception types.</param>
+        </member>
+        <member name="M:NSwag.AspNetCore.JsonExceptionFilterAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>Occurs after the action method is invoked.</summary>
+            <param name="context">The action executed context.</param>
+        </member>
+        <member name="T:NSwag.AspNetCore.OAuth2ClientSettings">
+            <summary>The OAuth client settings.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.OAuth2ClientSettings.ClientId">
+            <summary>Gets or sets the client identifier.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.OAuth2ClientSettings.ClientSecret">
+            <summary>Gets or sets the client secret.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.OAuth2ClientSettings.Realm">
+            <summary>Gets or sets the realm.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.OAuth2ClientSettings.AppName">
+            <summary>Gets or sets the name of the application.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.OAuth2ClientSettings.ScopeSeparator">
+            <summary>Gets or sets the scope separator.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.OAuth2ClientSettings.AdditionalQueryStringParameters">
+            <summary>Gets or sets the additional query string parameters.</summary>
+        </member>
+        <member name="T:NSwag.AspNetCore.SwaggerExtensions">
+            <summary>Provides OWIN extensions to enable Swagger UI.</summary>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Reflection.Assembly,NSwag.AspNetCore.SwaggerOwinSettings)">
+            <summary>Addes the Swagger generator and Swagger UI to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="webApiAssembly">The Web API assembly to search for controller types.</param>
+            <param name="settings">The Swagger generator settings.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Collections.Generic.IEnumerable{System.Reflection.Assembly},NSwag.AspNetCore.SwaggerOwinSettings)">
+            <summary>Addes the Swagger generator and Swagger UI to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="webApiAssemblies">The Web API assemblies to search for controller types.</param>
+            <param name="settings">The Swagger generator settings.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Collections.Generic.IEnumerable{System.Type},NSwag.AspNetCore.SwaggerOwinSettings)">
+            <summary>Addes the Swagger generator to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="controllerTypes">The Web API controller types.</param>
+            <param name="settings">The Swagger generator settings.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Collections.Generic.IEnumerable{System.Type},NSwag.AspNetCore.SwaggerOwinSettings,NSwag.CodeGeneration.SwaggerGenerators.SwaggerJsonSchemaGenerator)">
+            <summary>Addes the Swagger generator to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="controllerTypes">The Web API controller types.</param>
+            <param name="settings">The Swagger generator settings.</param>
+            <param name="schemaGenerator">The schema generator.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwaggerUi(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Reflection.Assembly,NSwag.AspNetCore.SwaggerUiOwinSettings)">
+            <summary>Addes the Swagger generator and Swagger UI to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="webApiAssembly">The Web API assembly to search for controller types.</param>
+            <param name="settings">The Swagger UI and generator settings.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwaggerUi(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Collections.Generic.IEnumerable{System.Reflection.Assembly},NSwag.AspNetCore.SwaggerUiOwinSettings)">
+            <summary>Addes the Swagger generator and Swagger UI to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="webApiAssemblies">The Web API assemblies to search for controller types.</param>
+            <param name="settings">The Swagger UI and generator settings.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwaggerUi(Microsoft.AspNetCore.Builder.IApplicationBuilder,NSwag.AspNetCore.SwaggerUiOwinSettings)">
+            <summary>Addes the Swagger UI (only) to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="settings">The Swagger UI settings.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerExtensions.UseSwaggerUi(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Collections.Generic.IEnumerable{System.Type},NSwag.AspNetCore.SwaggerUiOwinSettings,NSwag.CodeGeneration.SwaggerGenerators.SwaggerJsonSchemaGenerator)">
+            <summary>Addes the Swagger generator and Swagger UI to the OWIN pipeline.</summary>
+            <param name="app">The app.</param>
+            <param name="controllerTypes">The Web API controller types.</param>
+            <param name="settings">The Swagger UI and generator settings.</param>
+            <param name="schemaGenerator">The schema generator.</param>
+            <returns>The app builder.</returns>
+        </member>
+        <member name="T:NSwag.AspNetCore.SwaggerMiddleware">
+            <summary>Generates a Swagger specification on a given path.</summary>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,System.String,System.Collections.Generic.IEnumerable{System.Type},NSwag.AspNetCore.SwaggerOwinSettings,NSwag.CodeGeneration.SwaggerGenerators.SwaggerJsonSchemaGenerator)">
+            <summary>Initializes a new instance of the <see cref="T:NSwag.AspNetCore.SwaggerMiddleware"/> class.</summary>
+            <param name="nextDelegate">The next delegate.</param>
+            <param name="path">The path.</param>
+            <param name="controllerTypes">The controller types.</param>
+            <param name="settings">The settings.</param>
+            <param name="schemaGenerator">The schema generator.</param>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>Invokes the specified context.</summary>
+            <param name="context">The context.</param>
+            <returns>The task.</returns>
+        </member>
+        <member name="M:NSwag.AspNetCore.SwaggerMiddleware.GenerateSwagger(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>Generates the Swagger specification.</summary>
+            <param name="context">The context.</param>
+            <returns>The Swagger specification.</returns>
+        </member>
+        <member name="T:NSwag.AspNetCore.SwaggerOwinSettings">
+            <summary>The settings for UseSwagger.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.SwaggerOwinSettings.MiddlewareBasePath">
+            <summary>Gets or sets the OWIN base path (when mapped via app.MapOwinPath()) (must start with '/').</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.SwaggerOwinSettings.SwaggerRoute">
+            <summary>Gets or sets the Swagger URL route (must start with '/').</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.SwaggerOwinSettings.PostProcess">
+            <summary>Gets or sets the Swagger post process action.</summary>
+        </member>
+        <member name="T:NSwag.AspNetCore.SwaggerUiOwinSettings">
+            <summary>The settings for UseSwaggerUi.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.SwaggerUiOwinSettings.SwaggerUiRoute">
+            <summary>Gets or sets the swagger UI route (must start with '/').</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.SwaggerUiOwinSettings.ValidateSpecification">
+            <summary>Gets or sets a value indicating whether the Swagger specification should be validated.</summary>
+        </member>
+        <member name="P:NSwag.AspNetCore.SwaggerUiOwinSettings.OAuth2Client">
+            <summary>Gets or sets the Swagger UI OAuth2 client settings.</summary>
+        </member>
+    </members>
+</doc>

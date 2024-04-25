@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Twilio.AspNet.Common</id>
+    <version>6.0.0</version>
+    <authors>Twilio Labs</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/twilio/twilio-aspnet</projectUrl>
+    <iconUrl>https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/twilio-icon-64x64.png</iconUrl>
+    <description>Twilio request classes for handling Twilio webhooks.</description>
+    <releaseNotes>Refer to the changelog at https://github.com/twilio-labs/twilio-aspnet/blob/main/CHANGELOG.md</releaseNotes>
+    <copyright>Copyright 2022 (c) Twilio, Inc. All rights reserved.</copyright>
+    <tags>twilio twiml sms voice telephony phone aspnet</tags>
+    <repository type="git" url="https://github.com/twilio-labs/twilio-aspnet.git" commit="eba5055f7468a1a17c7fd69136ec735b5031dd9e" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

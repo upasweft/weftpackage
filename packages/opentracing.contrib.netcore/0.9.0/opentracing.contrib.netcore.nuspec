@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>OpenTracing.Contrib.NetCore</id>
+    <version>0.9.0</version>
+    <authors>Christian Weiss</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>package-icon.png</icon>
+    <projectUrl>https://github.com/opentracing-contrib/csharp-netcore</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/15482765</iconUrl>
+    <description>Adds OpenTracing instrumentation for .NET Core apps that use the `Microsoft.Extensions.*` stack.
+Instrumented components: HttpClient calls, ASP.NET Core, Entity Framework Core and any other library that uses DiagnosticSource events.</description>
+    <releaseNotes>https://github.com/opentracing-contrib/csharp-netcore/releases/tag/v0.9.0</releaseNotes>
+    <tags>opentracing distributed-tracing tracing netcore</tags>
+    <repository type="git" url="https://github.com/opentracing-contrib/csharp-netcore.git" commit="1324a3854f3151813a09c08e4c8860d89dc74809" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="[3.1.8, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="[3.1.8, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="[3.1.8, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="[3.1.8, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing" version="0.12.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.7.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="[6.0.0, 7.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="[6.0.0, 7.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="[6.0.0, 7.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="[6.0.0, 7.0.0)" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing" version="0.12.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="[7.0.0, 8.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="[7.0.0, 8.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="[7.0.0, 8.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="[7.0.0, 8.0.0)" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing" version="0.12.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+      <group targetFramework="net6.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+      <group targetFramework="net7.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+</package>

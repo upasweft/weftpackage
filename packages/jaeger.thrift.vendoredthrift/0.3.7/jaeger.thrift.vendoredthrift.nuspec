@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Jaeger.Thrift.VendoredThrift</id>
+    <version>0.3.7</version>
+    <authors>Chatham Financial Corp. and The Jaeger Authors</authors>
+    <owners>Chatham Financial Corp. and The Jaeger Authors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/jaegertracing/jaeger-client-csharp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jaegertracing/jaeger-client-csharp</projectUrl>
+    <description>A custom version of https://github.com/apache/thrift/src/netcore that does not depend on ASP.NET Core.</description>
+    <releaseNotes>https://github.com/jaegertracing/jaeger-client-csharp/releases/tag/v0.3.7</releaseNotes>
+    <copyright>Copyright 2018 (c) The Jaeger Authors. Copyright 2018 (c) Chatham Financial Corp.</copyright>
+    <repository type="git" url="git://github.com/jaegertracing/jaeger-client-csharp" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

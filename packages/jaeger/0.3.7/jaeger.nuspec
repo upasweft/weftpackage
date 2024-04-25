@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Jaeger</id>
+    <version>0.3.7</version>
+    <authors>Chatham Financial Corp. and The Jaeger Authors</authors>
+    <owners>Chatham Financial Corp. and The Jaeger Authors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/jaegertracing/jaeger-client-csharp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jaegertracing/jaeger-client-csharp</projectUrl>
+    <iconUrl>https://github.com/jaegertracing/jaeger-client-csharp/raw/master/images/jaeger-icon.png</iconUrl>
+    <description>Jaeger .NET Tracing</description>
+    <releaseNotes>https://github.com/jaegertracing/jaeger-client-csharp/releases/tag/v0.3.7</releaseNotes>
+    <copyright>Copyright 2018 (c) The Jaeger Authors. Copyright 2018 (c) Chatham Financial Corp.</copyright>
+    <tags>jaeger tracing opentracing</tags>
+    <repository type="git" url="git://github.com/jaegertracing/jaeger-client-csharp" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Jaeger.Thrift" version="0.3.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.EnvironmentVariables" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing" version="0.12.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

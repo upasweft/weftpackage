@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Serilog.Sinks.ApplicationInsights</id>
+    <version>4.0.0</version>
+    <authors>Joerg Battermann, Ivan Gavryliuk, contributors</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>icon.png</icon>
+    <projectUrl>https://github.com/serilog-contrib/serilog-sinks-applicationinsights</projectUrl>
+    <description>Serilog sink for Application Insights.</description>
+    <tags>serilog logging azure applicationinsights application insights</tags>
+    <repository type="git" url="https://github.com/serilog-contrib/serilog-sinks-applicationinsights" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="Microsoft.ApplicationInsights" version="2.20.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog" version="2.11.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.ApplicationInsights" version="2.20.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog" version="2.11.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.ApplicationInsights" version="2.20.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog" version="2.11.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

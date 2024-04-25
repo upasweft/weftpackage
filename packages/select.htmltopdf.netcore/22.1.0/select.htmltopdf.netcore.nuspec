@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Select.HtmlToPdf.NetCore</id>
+    <version>22.1.0</version>
+    <title>SelectPdf Html To Pdf Converter for .NET Core - Community Edition (FREE)</title>
+    <authors>SelectPdf</authors>
+    <owners>selectpdf</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>images\icon.png</icon>
+    <projectUrl>https://selectpdf.com/community-edition/</projectUrl>
+    <description>SelectPdf Html To Pdf Converter for .NET Core - Community Edition is the free version of the powerful html to pdf converter available in SelectPdf Library for .NET Core.
+
+The converter offers a lot of powerful options (convert any web page to pdf, convert any html string to pdf, html5/css3/javascript support, headers and footers support, etc) and the only limitation is that it can generate pdf documents up to 5 pages long.
+
+Free Html to Pdf Converter For .NET – Community Edition Features: Generate pdf documents up to 5 pages, Convert any web page to pdf, Convert any raw html string to pdf, Set pdf page settings (page size, page orientation, page margins), Resize content during conversion to fit the pdf page, Set pdf document properties, Set pdf viewer preferences, Set pdf security (passwords, permissions), Set conversion delay and web page navigation timeout, Custom headers and footers, Support for html in headers and footers, Automatic and manual page breaks, Repeat html table headers on each page, Support for @media types screen and print, Support for internal and external links, Generate bookmarks automatically based on html elements, Support for HTTP headers, Support for HTTP cookies, Support for web pages that require authentication, Support for proxy servers, Enable/disable javascript, Modify color space, Multithreading support, HTML5/CSS3 support, Web fonts support and many more.</description>
+    <summary>SelectPdf Free Html To Pdf for .NET Core - Community Edition is a powerful, free library that can convert from html to pdf in .NET Core.</summary>
+    <releaseNotes></releaseNotes>
+    <language>en-US</language>
+    <tags>pdf converter html2pdf htmltopdf html library html-to-pdf pdf-converter html-to-pdf-converter sdk html-to-pdf-net pdf-library pdf-sdk html-to-pdf-converter-net free-html-to-pdf free-pdf-library free-html-to-pdf-converter free-html-to-pdf-net html-to-pdf-net-core pdf-net-core net-core free-html-to-pdf-net-core</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="12.0.1" />
+        <dependency id="System.Buffers" version="4.5.0" />
+        <dependency id="System.Drawing.Common" version="4.5.1" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Security.Principal.Windows" version="4.5.1" />
+        <dependency id="System.Text.Encoding.CodePages" version="4.5.1" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.2" />
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="1.1.0" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Newtonsoft.Json" version="12.0.1" />
+        <dependency id="System.Buffers" version="4.5.0" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.2" />
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="1.1.0" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Newtonsoft.Json" version="12.0.1" />
+        <dependency id="System.Buffers" version="4.5.0" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.2" />
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="1.1.0" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/any/Select.Html.dep" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+</package>

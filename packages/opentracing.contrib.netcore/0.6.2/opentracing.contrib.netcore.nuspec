@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>OpenTracing.Contrib.NetCore</id>
+    <version>0.6.2</version>
+    <authors>Christian Weiss</authors>
+    <owners>Christian Weiss</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/opentracing-contrib/csharp-netcore/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/opentracing-contrib/csharp-netcore</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/15482765</iconUrl>
+    <description>Adds OpenTracing instrumentation for .NET Core apps that use the `Microsoft.Extensions.*` stack.
+Instrumented components: HttpClient calls, ASP.NET Core, Entity Framework Core and any other library that uses DiagnosticSource events.</description>
+    <releaseNotes>https://github.com/opentracing-contrib/csharp-netcore/releases/tag/0.6.2</releaseNotes>
+    <tags>opentracing distributed-tracing tracing netcore</tags>
+    <repository type="git" url="git://github.com/opentracing-contrib/csharp-netcore" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="OpenTracing" version="0.12.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
